@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<h2 class='title'>Password Generator</h1>
+			<div class='password-container'>
+                <span id="password">Example: x91DzLp30</span>
+                <button id='copy'>COPY</button>
+            </div>
+			<div class='settings'>
+				<label>Password Length:</label>
+				<input type="number" min="6" max="15" id='length' value='6' />
+			</div>
+			<div class='settings'>
+				<label>Include uppercase:</label>
+				<input type="checkbox" id='upper' checked/>
+			</div>
+			<div class='settings'>
+				<label>Include lowercase:</label>
+				<input type="checkbox" id='lower' checked />
+			</div>
+			<div class='settings'>
+				<label>Include numbers:</label>
+				<input type="checkbox" id='numbers' checked/>
+			</div>
+			<div class='settings'>
+				<label>Include symbols:</label>
+				<input type="checkbox" id='symbols' />
+            </div>
+            
+            <button class='generate-button' id='generate'>GENERATE</button>
+		</div>
+		<div class='bottom-container' id='bottom-container'>
+			<p>Password has been copied</p>
+		</div>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
